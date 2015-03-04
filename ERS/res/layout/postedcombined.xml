@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/postedcombined" android:background="#eee"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+	<TextView
+    	android:id="@+id/enterDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        style="@style/headerText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="YOUR CARPOOL OFFER"
+        android:textSize="20sp"
+		android:paddingBottom="5sp" />
+	     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+				  
+ 	
+ 	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+		
+		<include
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    layout="@layout/listpostoffers" />
+	
+		<Button
+		    android:id="@+id/buttonEditDeleteOffer"
+		    style="@style/button"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30sp"
+		    android:layout_marginRight="30sp"
+		    android:background="@layout/button_layout"
+		    android:text="Edit Offer / Delete Offer"
+		    android:textColor="#ffffff" />
+	
+	</LinearLayout>
+
+
+	<TextView
+       	android:id="@+id/enterDetails"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"   
+       	style="@style/headerText"
+        android:layout_gravity="center"
+        android:gravity="center"
+       	android:text="CONFIRMED PARTICIPANTS"
+       	android:textSize="20sp"
+		android:paddingBottom="5sp" />
+	     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+				  
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+	    android:orientation="vertical" >
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<!-- Offer ID (pid) - will be HIDDEN - used to pass to other activity -->
+			<TextView
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+	    		android:layout_weight="1"
+	    		android:gravity="center"
+	    		android:visibility="gone"
+	    		android:hint="Pid" />
+	
+			<!-- Email Label -->
+			<TextView
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+				android:layout_weight="1"
+	    		android:gravity="center"
+	    		android:visibility="gone"
+	    		android:hint="Email" />
+
+			<!-- Name Label -->
+			<TextView
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+	    		android:layout_weight="1"
+	    		android:gravity="center"
+	    		android:text="Name" android:textColor="#000000" />
+	
+			<!-- Pickup Label -->
+			<TextView 
+	    		android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+    	    	android:gravity="center"
+				android:layout_weight="1" android:textColor="#000000"
+				android:text="PickUp" />
+	
+			<!-- Drop Label -->
+			<TextView 
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+        		android:gravity="center"
+				android:layout_weight="1" android:textColor="#000000"
+				android:text="Drop" />
+
+		</LinearLayout>
+        <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+		<ListView
+		    android:id="@+id/list1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:divider="#000000" android:dividerHeight="1sp" />
+
+
+	</LinearLayout>
+
+    <TextView
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        style="@style/headerText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="PENDING REQUEST"
+        android:textSize="20sp"
+		android:paddingBottom="5sp" />
+         <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+				  
+    
+    
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+	    android:orientation="vertical" >
+		
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<!-- Offer ID (pid) - will be HIDDEN - used to pass to other activity -->
+			<TextView
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+	    		android:layout_weight="1"
+	    		android:gravity="center"
+	    		android:visibility="gone"
+	    		android:hint="Pid" />
+	
+			<!-- Email Label -->
+			<TextView
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+				android:layout_weight="1"
+	    		android:gravity="center"
+	    		android:visibility="gone"
+	    		android:hint="Email" />
+
+			<!-- Name Label -->
+			<TextView
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+	    		android:layout_weight="1"
+	    		android:gravity="center" android:textColor="#000000"
+	    		android:text="Name" />
+	
+			<!-- Pickup Label -->
+			<TextView 
+	    		android:layout_width="0dp"
+		    	android:layout_height="match_parent" android:textColor="#000000"
+    	    	android:gravity="center"
+				android:layout_weight="1" 
+				android:text="PickUp" />
+	
+			<!-- Drop Label -->
+			<TextView 
+	    		android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+        		android:gravity="center" android:textColor="#000000"
+				android:layout_weight="1" 
+				android:text="Drop" />
+
+		</LinearLayout>
+		<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+		<ListView
+		    android:id="@+id/list2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:divider="#000000" android:dividerHeight="1sp" />
+        
+	</LinearLayout>
+ 	
+</LinearLayout>

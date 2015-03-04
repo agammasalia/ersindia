@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="#eee"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#FFFFFF"
+	    android:orientation="vertical"
+	    android:layout_marginRight="10sp"
+	    android:layout_marginLeft="10sp" >
+
+        <TextView
+          android:id="@+id/editDetails"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"   
+          style="@style/headerText"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="OFFER DETAILS"
+          android:textSize="20sp"
+          android:paddingBottom="5sp" />
+
+		<LinearLayout
+	     android:id="@+id/LinearCity"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            style="@style/normalText"
+            android:gravity="center_vertical"
+            android:text="City" />
+
+        <TextView
+            android:id="@+id/editCity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Set city" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearSource"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView09"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Source" />
+
+        <TextView
+            android:id="@+id/editSource"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Set source" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearDestination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView08"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Destination" />
+
+        <TextView
+            android:id="@+id/editDestination"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Set Destination" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView07"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/editDate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Set Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView06"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/editTime"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            style="@style/retrieveText"
+            android:text="Set time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearGender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Gender" />
+
+        <TextView
+            android:id="@+id/editGender"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Gender" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextCarpoolType"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Carpool Type" />
+
+        <TextView
+            android:id="@+id/editType"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="carpool type" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextVehicle"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Vehicle" />
+
+        <TextView
+            android:id="@+id/editVehicle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="vehicle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearVehicleNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Vehicle Number" />
+
+        <TextView
+            android:id="@+id/editVehicleNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="vehicle number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearVacancy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Number of Vacancy" />
+
+        <TextView
+            android:id="@+id/editVacancy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Set vacancy" >
+
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <TextView
+            android:id="@+id/searchDate"
+            style="@style/normalText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:text="Fare" />
+
+        <TextView
+            android:id="@+id/editFare"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            style="@style/retrieveText"
+            android:text="Set fare" />
+    </LinearLayout>
+
+    
+    
+    <LinearLayout
+			android:id="@+id/linearName"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="5dip"
+			android:layout_marginBottom="5dip" >
+        
+        <TextView
+			style="@style/normalText"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:ems="10"
+			android:gravity="center"
+			android:text="Accepted" />
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			style="@style/normalText"
+			android:ems="10"
+			android:gravity="center"
+			android:text="Pending" />
+        
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/linearList"
+        android:layout_width="fill_parent"
+        android:layout_height="150sp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+		<ListView
+			android:id="@+id/listAccepted"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:divider="#000000" android:dividerHeight="1sp" />
+
+		<ListView
+			android:id="@+id/listRejected"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:divider="#000000" android:dividerHeight="1sp" />
+	
+	</LinearLayout>
+    
+    <EditText
+          android:id="@+id/pickupPoint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          style="@style/Single_EditText"
+          android:ems="10"  android:textColor="#0000FF"
+          android:hint="Pickup Point" />
+
+    <EditText
+          android:id="@+id/dropPoint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Single_EditText"
+          android:layout_marginBottom="10dip"
+          android:ems="10" android:textColor="#0000FF"
+          android:hint="Drop Point" />
+    
+    <LinearLayout
+        android:id="@+id/linearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <Button
+            android:id="@+id/buttonDeleteOffer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip"
+            android:background="@layout/button_layout"
+            android:textColor="#ffffff"
+            style="@style/button"
+            android:text="Profile Details"  />
+
+        <Button
+            android:id="@+id/buttonEditOffer"
+            style="@style/button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@layout/button_layout"
+            android:text="Join Offer"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <Button
+    		android:id="@+id/buttonMap"
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="View Location in Map"
+            android:background="@layout/button_layout"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+	        android:textColor="#ffffff"
+    	    style="@style/button" />
+    
+</LinearLayout>
+</ScrollView>

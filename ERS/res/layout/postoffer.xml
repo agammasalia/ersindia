@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="#eee"
+    android:layout_height="fill_parent" >
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="10dip" >
+	  
+
+      <TextView
+          android:id="@+id/enterDetails"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"   
+          style="@style/headerText"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="ENTER CARPOOL DETAILS"
+          android:textSize="20sp" android:paddingBottom="5sp"
+           />
+				  
+	  <EditText 
+	      android:id="@+id/postCity"
+	      android:layout_below="@+id/enterDetails"
+          android:layout_width="match_parent" 
+	      android:layout_height="wrap_content" 
+	      style="@style/Single_EditText"
+	      android:ems="10" android:textColor="#FF0000"
+	      android:hint="Enter City" >
+
+          <requestFocus />
+      </EditText>
+      
+      <EditText
+          android:id="@+id/postSource"
+          android:layout_below="@id/postCity"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Single_EditText"
+          android:ems="10" android:textColor="#FF0000"
+          android:hint="Enter Source" />
+
+      <EditText
+          android:id="@+id/postDestination"
+          android:layout_below="@id/postSource"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Single_EditText"
+          android:layout_marginBottom="10dip"
+          android:ems="10" android:textColor="#FF0000"
+          android:hint="Enter Destination" />
+
+
+     <LinearLayout
+        android:id="@+id/linearDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="10sp" >
+
+      <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            style="@style/normalText"
+            android:gravity="center_vertical"
+            android:text="Date" />
+
+<TextView
+		    android:id="@+id/postDate"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:ems="10"
+		    style="@style/normalText"
+		    android:gravity="center_vertical"
+		    android:paddingBottom="5sp"
+		    android:text="Set Date" />
+    </LinearLayout>
+
+      <LinearLayout android:id="@+id/linearTime"
+        android:layout_below="@id/linearDate"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" android:layout_marginBottom="10sp" android:layout_marginTop="10dip"
+	    >
+
+          <TextView
+              android:id="@+id/textTime"
+              style="@style/normalText"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:ems="10"
+              android:gravity="center_vertical"
+              android:paddingTop="5sp"
+              android:text="Time" />
+  
+		<TextView
+		    android:id="@+id/postTime"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:ems="10"
+		    style="@style/normalText"
+		    android:gravity="center_vertical"
+		    android:text="Set Time" />
+      
+      	<Button
+      	    android:id="@+id/buttonTime"
+      	    android:layout_width="fill_parent" android:visibility="gone"
+      	    android:layout_height="fill_parent" android:textColor="#000000"
+      	    android:layout_weight="1"
+      	    android:text="Set Time" />
+	
+	  </LinearLayout>
+	
+      <LinearLayout android:id="@+id/linearGender"
+        android:layout_below="@id/linearTime"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	  
+		<TextView
+          android:id="@+id/postGender"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      android:ems="10" 
+	      style="@style/normalText"
+          android:gravity="center_vertical"
+          android:text="Gender" />
+      
+      	<Spinner
+      	    android:id="@+id/buttonGender"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_weight="1" 
+      	    android:prompt="@string/chooseOption" />
+	
+	  </LinearLayout>
+	
+      <LinearLayout android:id="@+id/linearType"
+        android:layout_below="@id/linearGender"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	  
+		<TextView
+          android:id="@+id/postType"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      android:ems="10"
+	      style="@style/normalText"
+          android:gravity="center_vertical"
+          android:text="Carpool Type" />
+      
+      	<Spinner
+      	    android:id="@+id/buttonType"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_weight="1" 
+      	    android:prompt="@string/chooseOption" />
+	
+	  </LinearLayout>
+	
+      <LinearLayout android:id="@+id/linearVehicle"
+        android:layout_below="@id/linearType"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	  
+		<TextView
+          android:id="@+id/postVehicle"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      android:ems="10"
+	      style="@style/normalText"
+          android:gravity="center_vertical"
+          android:text="Select Vehicle" />
+      
+      	<Spinner
+      	    android:id="@+id/buttonVehicle"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_weight="1" 
+      	    
+      	    android:prompt="@string/chooseOption" />
+	
+	  </LinearLayout>
+
+      <EditText
+          android:id="@+id/postVehicleNumber"
+          android:layout_below="@id/linearVehicle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Single_EditText"
+          android:ems="10"  android:textColor="#000000"
+          android:hint="Enter Vehicle Number" />
+      
+      <EditText
+          android:id="@+id/postVacancy"
+          android:layout_below="@id/postVehicleNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Single_EditText"
+          android:inputType="number"
+          android:ems="10" android:textColor="#000000"
+          android:hint="Enter Number of Vacancy" />
+      
+      <EditText
+          android:id="@+id/postFare"
+          android:layout_below="@id/postVacancy"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="@style/Single_EditText"
+          android:layout_marginBottom="10dip"
+          android:inputType="number"
+          android:ems="10" android:textColor="#000000"
+          android:hint="Enter Fare" />
+      
+      	<LinearLayout
+          android:id="@+id/linearButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/postFare"
+          android:orientation="horizontal"  >
+
+	  <Button
+              android:id="@+id/buttonPostOffer"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" android:layout_marginRight="10dip"
+              android:text="Post Offer"
+          android:background="@layout/button_layout"
+	      android:textColor="#ffffff"
+	      style="@style/button"
+ />
+          
+          <Button
+              android:id="@+id/buttonMap"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1" android:layout_marginLeft="10dip"
+              android:text="View in Map"          android:background="@layout/button_layout"
+	      android:textColor="#ffffff"
+	      style="@style/button"
+ />
+      
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+</ScrollView>

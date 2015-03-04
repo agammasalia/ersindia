@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:background="#eee"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" 
+	android:divider="#000000">
+
+	<!-- Offer ID (pid) - will be HIDDEN - used to pass to other activity -->
+	<TextView
+		android:id="@+id/pid"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:visibility="gone"
+		android:hint="PID" />
+	
+	<!-- Email Label -->
+	<TextView
+		android:id="@+id/cpostemail"
+		android:layout_width="0dp"
+	    android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:visibility="gone"
+		android:hint="Email" />
+
+	<!-- Request EMail Label -->
+	<TextView
+		android:id="@+id/crequestemail"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:visibility="gone"
+		android:gravity="center" android:textColor="#0000FF"
+		android:hint="Request Email" />
+	
+	<!-- Request uid Label -->
+	<TextView
+		android:id="@+id/cuid"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:visibility="gone"
+		android:gravity="center" android:textColor="#0000FF"
+		android:hint="Request uid" />
+	
+	<!-- Name Label -->
+	<TextView
+		android:id="@+id/cname"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center" android:textColor="#0000FF"
+		android:hint="Name" />
+	
+	<!-- Pickup Label -->
+	<TextView android:id="@+id/cpickup" 
+		android:layout_width="0dp"
+	  	android:layout_height="match_parent"
+       	android:gravity="center"
+		android:layout_weight="1" android:textColor="#0000FF"
+		android:hint="PickUp" />
+	
+	<!-- Drop Label -->
+	<TextView android:id="@+id/cdrop" 
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+    	android:gravity="center"
+		android:layout_weight="1" android:textColor="#0000FF"
+		android:hint="Drop" />
+	
+<!--Profile Button -->
+
+</LinearLayout>

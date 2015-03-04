@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" >
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/table"
+        android:orientation="vertical"
+       >
+	
+  <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+ <ImageButton android:id="@+id/imageView"
+	 android:layout_width="fill_parent"
+	 android:layout_height="300dip"
+	 android:layout_margin="10dip"
+	 android:focusable="true"
+	 android:layout_gravity="center"
+	 android:background="@drawable/ic_contact_picture"
+	 android:scaleType="centerCrop"
+ >
+</ImageButton>
+</LinearLayout>
+
+
+<LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:padding="3dip"
+		 style="@style/Divider"
+		 >
+ 
+       <TextView android:id="@+id/name"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"  
+        style="@style/normalText"
+        android:layout_weight="1"
+    	android:text="  Name: " />
+
+     
+        <TextView android:id="@+id/name1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"   android:textColor="#000000"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="" >
+        </TextView>
+
+</LinearLayout> 
+
+<LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:padding="3dip"
+		 style="@style/Divider">
+       <TextView android:id="@+id/age"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"  
+        android:layout_weight="1"   
+        style="@style/normalText"              
+        android:text="  Age:" >
+        </TextView>
+
+        <TextView android:id="@+id/age1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"
+        android:gravity="left"           android:textColor="#000000"                
+        android:text="" >
+        </TextView>
+
+</LinearLayout> 
+    
+<LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:padding="3dip"
+		 style="@style/Divider">
+        
+       <TextView android:id="@+id/dob"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"  
+        android:layout_weight="1"
+        style="@style/normalText"                        
+        android:text="  Date of Birth:" >
+        </TextView>
+
+        <TextView android:id="@+id/dob1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"
+        android:gravity="left"               android:textColor="#000000"            
+        android:text="" >
+        </TextView>
+
+</LinearLayout> 
+
+<LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:padding="3dip"
+		 style="@style/Divider">
+        
+       <TextView android:id="@+id/gender"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip" 
+        android:layout_weight="1" 
+        style="@style/normalText"                        
+        android:text="  Gender:" >
+        </TextView>
+
+        <TextView android:id="@+id/gender1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"  android:textColor="#000000"
+        android:layout_weight="1"
+        android:gravity="left"                         
+        android:text="" >
+        </TextView>
+
+</LinearLayout> 
+
+<LinearLayout
+    style="@style/Divider"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dip" >
+        
+       <TextView
+           android:id="@+id/phone"
+           style="@style/normalText"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           android:padding="5dip"
+           android:text="  Phone No.:" >
+
+        </TextView>
+
+        <TextView android:id="@+id/phone1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"  android:textColor="#000000"
+        android:gravity="left"                      
+        android:text="" >
+        </TextView>
+        
+      <Button android:id="@+id/btncall"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:background="@layout/button_layout"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        style="@style/button"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:text="Call" />
+    
+        
+
+</LinearLayout>
+
+<LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:padding="3dip"
+		 style="@style/Divider">
+        
+       <TextView android:id="@+id/email"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"
+        style="@style/normalText"                          
+        android:text="  Email:" >
+        </TextView>
+
+        <TextView android:id="@+id/email1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"  android:textColor="#000000"
+        android:gravity="left"                          
+        android:text="" >
+        </TextView>
+
+
+</LinearLayout>
+          
+
+<LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:padding="3dip"
+		 style="@style/Divider">
+        
+        <TextView android:id="@+id/address"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"
+        style="@style/normalText"                          
+        android:text="  Address:" >
+        </TextView>
+
+        <TextView android:id="@+id/address1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:layout_weight="1"
+        android:gravity="left"                       android:textColor="#000000"    
+        android:text="" >
+        </TextView>
+
+</LinearLayout>
+ 
+ <LinearLayout
+    	 android:layout_width="fill_parent"
+   	     android:layout_height="wrap_content"
+		 android:orientation="horizontal">
+        
+ <Button android:id="@+id/btneditprof"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:background="@layout/button_layout"
+        android:textColor="#ffffff"
+        android:layout_margin="10dip"
+        style="@style/button"
+        android:text="Edit Profile"
+     />
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView> 

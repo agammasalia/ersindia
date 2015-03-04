@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" 
+	android:background="#eee">
+
+	<!-- Offer ID (pid) - will be HIDDEN - used to pass to other activity -->
+	<TextView
+		android:id="@+id/pid"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:visibility="gone"
+		android:hint="PID" />
+	
+	<!-- Email Label -->
+	<TextView
+		android:id="@+id/rpostemail"
+		android:layout_width="0dp"
+	    android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:visibility="gone"
+		android:hint="Email" />
+
+	<!-- Request EMail Label -->
+	<TextView
+		android:id="@+id/rrequestemail"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1" android:textColor="#0000FF"
+		android:gravity="center"
+		android:visibility="gone"
+		android:hint="Request Email" />
+	
+	<!-- Name Label -->
+	<TextView
+		android:id="@+id/rname"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1" android:textColor="#0000FF"
+		android:gravity="center"
+		android:hint="Name" />
+	
+	<!-- Pickup Label -->
+	<TextView android:id="@+id/rpickup" 
+		android:layout_width="0dp"
+	  	android:layout_height="match_parent"
+       	android:gravity="center" android:textColor="#0000FF"
+		android:layout_weight="1" 
+		android:hint="PickUp" />
+	
+	<!-- Drop Label -->
+	<TextView android:id="@+id/rdrop" 
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+    	android:gravity="center"
+		android:layout_weight="1" android:textColor="#0000FF"
+		android:hint="Drop" />
+	
+</LinearLayout>

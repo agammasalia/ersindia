@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="#eee"
+    android:layout_height="fill_parent" >
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="10dip" >
+
+      <TextView
+          android:id="@+id/enterSearchDetails"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"   
+          style="@style/headerText"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="ENTER SEARCH DETAILS"
+          android:textSize="20sp" android:paddingBottom="5sp"
+           />
+
+      <EditText
+          android:id="@+id/searchCity"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          style="@style/Single_EditText"
+          android:layout_below="@+id/enterSearchDetails"
+          android:ems="10" android:textColor="#FF0000"
+          android:hint="Enter City" >
+          <requestFocus />
+
+      </EditText>
+
+      <EditText
+          android:id="@+id/searchSource"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          style="@style/Single_EditText"
+          android:layout_below="@id/searchCity"
+          android:ems="10" android:textColor="#FF0000"
+          android:hint="Enter Source" />
+
+      <EditText
+          android:id="@+id/searchDestination"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          style="@style/Single_EditText"
+          android:layout_below="@id/searchSource"
+          android:ems="10" android:textColor="#FF0000"
+          android:hint="Enter Destination" />
+
+      
+
+      <LinearLayout android:id="@+id/linearSearchDate"
+        android:layout_below="@id/dropPoint"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20sp"
+	    android:layout_marginBottom="10sp"
+	    >
+
+          <TextView
+          android:id="@+id/textViewDate"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      style="@style/normalText"
+	      android:ems="10"
+          android:gravity="center_vertical"
+          android:text="Date" />
+          			  
+		<TextView
+          android:id="@+id/searchDate"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      style="@style/normalText"
+	      android:ems="10"
+          android:gravity="center_vertical"
+          android:text="Date" />
+      
+      	
+	
+	  </LinearLayout>
+	
+      <LinearLayout android:id="@+id/linearSearchGender"
+        android:layout_below="@id/linearSearchDate"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	  
+		<TextView
+          android:id="@+id/searchGender"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      style="@style/normalText"
+	      android:ems="10"
+          android:gravity="center_vertical"
+          android:text="Gender" />
+      
+      	<Spinner
+      	    android:id="@+id/buttonSearchGender"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_weight="1"
+      	    android:prompt="@string/chooseOption" />
+	
+	  </LinearLayout>
+	
+      <LinearLayout android:id="@+id/linearSearchType"
+        android:layout_below="@id/linearSearchGender"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	  
+		<TextView
+          android:id="@+id/searchType"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_weight="1"
+	      style="@style/normalText"
+	      android:ems="10"
+          android:gravity="center_vertical"
+          android:text="Carpool Type" />
+      
+      	<Spinner
+      	    android:id="@+id/buttonSearchType"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_weight="1"
+      	    android:prompt="@string/chooseOption" />
+	
+	  </LinearLayout>
+
+      <Button
+          android:id="@+id/buttonSearchOffer"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@layout/button_layout"
+          android:layout_marginTop="10dip"
+          android:textColor="#ffffff"
+          style="@style/button"
+          android:layout_below="@id/linearSearchType"
+          android:text="Search Offer" />
+
+  </LinearLayout>
+
+</ScrollView>

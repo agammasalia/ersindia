@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="#eee"
+    android:layout_height="match_parent" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dip" >
+		
+		<!--  View Title Label -->
+      	<TextView
+          android:id="@+id/registerDetails"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"   
+          style="@style/headerText"
+          android:layout_gravity="center"
+          android:text="REGISTER NEW ACCOUNT"
+          android:textSize="20sp" android:paddingBottom="5sp"
+           />
+			
+		<!--  Name TextField -->
+		<EditText
+		    android:id="@+id/registerName"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    style="@style/Single_EditText"
+		    android:textColor="#000000"
+		    android:hint="Full Name" >
+
+			<requestFocus />
+		</EditText>
+		    
+		<!--  Email TextField -->
+		<EditText
+		    android:id="@+id/registerEmail"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    style="@style/Single_EditText"
+		    android:textColor="#000000"
+		    android:hint="ERS ID" />
+
+		<!--  Password TextField -->
+		<EditText
+		    android:id="@+id/registerPassword"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    style="@style/Single_EditText"
+		    android:layout_marginBottom="10dip"
+		    android:textColor="#000000"
+		    android:hint="Password"
+		    android:password="true" />
+
+        <LinearLayout android:id="@+id/linearRegisterGender"
+          android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+          android:orientation="horizontal">
+	  
+		  <!--  Gender TextView -->
+  		  <TextView
+  		  	android:id="@+id/registerGender"
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="match_parent"
+  		    android:layout_weight="1"
+  		    android:ems="10"
+			android:textColor="#000000"
+  		    android:gravity="center_vertical"
+  		    android:text="Gender" />
+      
+          <!-- Select Gender Option -->
+      	  <Spinner
+      	    android:id="@+id/spinnerGender"
+      	    android:layout_width="fill_parent"
+      	    android:layout_height="match_parent"
+      	    android:layout_weight="1"
+      	    android:layout_marginBottom="10dip"
+      	    android:prompt="@string/chooseOption" />
+
+	    </LinearLayout>
+
+        <LinearLayout android:id="@+id/linearRegisterDOB"
+          android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginBottom="10sp">
+	  
+		  <!--  DOB TextView -->
+		  <TextView
+		    android:id="@+id/registerDOB"
+		    android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:ems="10"
+			android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:text="Date of Birth" />
+      
+      	  <!-- DOB Button -->
+		  <TextView
+		      android:id="@+id/btnDOB"
+		      android:layout_width="fill_parent"
+		      android:layout_height="match_parent"
+		      android:layout_weight="1"
+			  android:textColor="#000000"
+		      android:text="Set Date" /> 
+
+	    </LinearLayout>
+		
+		<!--  Email number TextField -->
+		<EditText
+		    android:id="@+id/registerEmailAddress"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    style="@style/Single_EditText"
+		    android:textColor="#000000"
+		    android:hint="E-mail" />
+		
+		<!--  Phone number TextField -->
+		<EditText
+		    android:id="@+id/registerNumber"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    style="@style/Single_EditText"
+		    android:textColor="#000000"
+		    android:hint="Phone Number"
+		    android:inputType="number" />
+		
+		
+
+		<!--  Login Button -->        
+		<Button
+		    android:id="@+id/btnRegister"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginTop="20dip"
+			android:background="@layout/button_layout"
+            android:textColor="#ffffff"
+            style="@style/button"
+		    android:text="Register" />
+
+		<!--  Link to Login Screen -->
+		<Button
+		    android:id="@+id/btnLinkToLoginScreen"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginTop="40dip"
+		    android:background="@null"
+		    android:text="Already registred. Login!"
+		    android:textColor="#0099CC"
+		    android:textStyle="bold" />
+
+	</LinearLayout>
+
+</ScrollView>

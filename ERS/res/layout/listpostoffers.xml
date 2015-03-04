@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="#eee"
+	android:orientation="horizontal"
+	android:padding="5dip">
+
+	<!-- Offer ID (pid) - will be HIDDEN - used to pass to other activity -->
+	<TextView
+	    android:id="@+id/pid"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone" />
+	
+	<!-- Email Label -->
+	<TextView
+	    android:id="@+id/email"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone" />
+	
+	<!-- Date Label -->
+	<TextView
+	    android:id="@+id/date"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2.6" android:textColor="#000000"
+	    android:gravity="center"
+	    android:hint="Date" />
+	
+	<LinearLayout
+        android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="6" >
+	  
+		<!-- City Label -->
+		<TextView
+		    android:id="@+id/city"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center" android:textColor="#FF0000"
+			android:hint="City" />
+	
+		<LinearLayout
+        	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+        	
+        	<!-- Source Label -->
+			<TextView android:id="@+id/source" 
+	    		android:layout_width="fill_parent"
+		    	android:layout_height="match_parent"
+    	    	android:gravity="center" android:textColor="#FF0000"
+				android:layout_weight="1" 
+				android:hint="Source" />
+	
+			<!-- Destination Label -->
+			<TextView android:id="@+id/destination" 
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="match_parent"
+        		android:gravity="center" android:textColor="#FF0000"
+				android:layout_weight="1" 
+				android:hint="Destination" />
+	
+		</LinearLayout>
+		
+	</LinearLayout>
+
+	<!-- Time Label -->
+	<TextView android:id="@+id/time" 
+	    android:layout_width="0dp"
+		android:layout_height="match_parent" 
+		android:hint="Time" android:textColor="#000000"
+		android:gravity="center"
+		android:layout_weight="1.9" />
+
+</LinearLayout>

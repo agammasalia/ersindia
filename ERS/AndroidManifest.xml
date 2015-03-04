@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ersindia.akjm"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="ersindia.akjm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="ersindia.akjm.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login Account" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register New Account" />
+        <activity
+            android:name=".PostOffer"
+            android:label="Post New Offer" />
+        <activity
+            android:name=".PostedOffer"
+            android:label="Posted Offer" />
+        <activity
+            android:name=".EditOffer"
+            android:label="Edit Offer" />
+        <activity
+            android:name=".SearchOffer"
+            android:label="Search Offer" />
+        <activity
+            android:name=".SearchedOffer"
+            android:label="Searched Offer" />
+        <activity
+            android:name=".RequestJoin"
+            android:label="Request For Join" />
+        <activity
+            android:name=".PostedCombined"
+            android:label="Your Selected Offer" />
+        <activity
+            android:name=".ParticipatedOffer"
+            android:label="Participated Offer" />
+        <activity
+            android:name="ersindia.akjm.Profile"
+            android:label="Profile" />
+        <activity
+            android:name="ersindia.akjm.EditProfileActivity"
+            android:label="Edit Profile" />
+        <activity
+            android:name="ersindia.akjm.ForgotPassword"
+            android:label="Forgot Password" />
+        <activity
+            android:name="ersindia.akjm.ChangePassword"
+            android:label="Change Password" />
+        <activity
+            android:name="ersindia.akjm.FullScreenImage"
+            android:label="" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="ersindia.akjm" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService" />
+        
+        <receiver android:name=".ServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                </intent-filter>
+        </receiver>
+
+        
+    </application>
+
+</manifest>
